@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Test_i2C
+D 2-polar test point
+K point tp
+F ~
+$ENDCMP
+#
+#End Doc Library

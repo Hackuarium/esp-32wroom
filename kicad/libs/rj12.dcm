@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RJ12
+D RJ connector, 6P6C (6 positions 6 connected)
+K 6P6C RJ female connector
+F ~
+$ENDCMP
+#
+$CMP RJ12-I2C
+D RJ connector, 6P6C (6 positions 6 connected), RJ12/RJ18/RJ25
+K 6P6C RJ female connector
+F ~
+$ENDCMP
+#
+$CMP RJ18
+D RJ connector, 6P6C (6 positions 6 connected)
+K 6P6C RJ female connector
+F ~
+$ENDCMP
+#
+$CMP RJ25
+D RJ connector, 6P6C (6 positions 6 connected)
+K 6P6C RJ female connector
+F ~
+$ENDCMP
+#
+#End Doc Library
