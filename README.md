@@ -22,17 +22,18 @@
 
 15: WS2812, adressable led
 
-Read information on: https://www.kloppenborg.net/images/blog/esp8266/esp8266-esp12e-specs.pdf
+<img src="https://ht-deko.com/arduino/pic/esp-wroom-32_pinout_01.png">
 
-Available pins: http://www.rabbithacks.com/esp8266/esp12-e-directly-usable-gpio-pins/
+## ESP32-Wroom32 datasheet
+https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
 
-PWM on all the pins !
-HSPI (screen or other): 12 13 14 15
-PWM: R12 G15 B13
-ADC: TOUT
-I2C: SCL14 SDA2
+## Official Espressif hardware design guidelines
+https://www.espressif.com/sites/default/files/documentation/esp32_hardware_design_guidelines_en.pdf
 
-<img src="docs/esp12e-pinout.png">
+## Really DIY ESP32 board
+https://www.instructables.com/id/DIY-ESP32-Development-Board-ESPer/
+
+
 
 ## Flashing board ?
 
@@ -55,6 +56,5 @@ You need to maintain `SW2` while pressing `SW1` (reset) in order to set the ESP-
 - Humidity / Temperature: ChipCAP2 or Si7021
 - Power monitoring
 
-## Resources
-Official Espressif hardware design guidelines
-https://www.espressif.com/sites/default/files/documentation/esp32_hardware_design_guidelines_en.pdf
+## Other resources
+
