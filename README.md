@@ -34,12 +34,6 @@ https://www.espressif.com/sites/default/files/documentation/esp32_hardware_desig
 ## Really DIY ESP32 board
 https://www.instructables.com/id/DIY-ESP32-Development-Board-ESPer/
 
-
-## Flashing board ?
-
-You need to maintain `SW2` while pressing `SW1` (reset) in order to set the ESP-12E in programing mode.
-
-
 ## Programming an ESP32 from Arduino IDE
 
 Start by installing the ESP32 board in Arduino IDE
@@ -48,6 +42,18 @@ https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-window
 
 Getting started with ESP32 (including blink example)
 https://randomnerdtutorials.com/getting-started-with-esp32/
+
+
+
+## Flashing board ?
+
+May vary depending on development board models:
+One option:
+Hold down the "BOOT" button
+After uploading code and seeing the "Connecting..." message in Arduino IDE, release your finger from the "BOOT" button.
+To avoid worrying about pressing the button, connect 10 uF electrolytic capacitor between the EN pin and GND
+(https://randomnerdtutorials.com/solved-failed-to-connect-to-esp32-timed-out-waiting-for-packet-header/)
+
 
 
 ## FreeRTOS
