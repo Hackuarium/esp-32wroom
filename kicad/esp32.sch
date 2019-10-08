@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:esp8266-cache
+LIBS:esp32-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1301,9 +1301,9 @@ NoConn ~ 1000 2900
 NoConn ~ 1000 3050
 NoConn ~ 1000 3200
 Text Notes 7400 7500 0    50   ~ 0
-ESP-12e playground
+ESP-32 playground
 Text Notes 8150 7650 0    50   ~ 0
-18.01.2019
+3.10.2019
 $Comp
 L power:GND #PWR0120
 U 1 1 5D9F2147
@@ -1378,7 +1378,7 @@ U 1 1 5DAACE54
 P 3450 4200
 F 0 "C10" V 3198 4200 50  0000 C CNN
 F 1 "100nF" V 3289 4200 50  0000 C CNN
-F 2 "" H 3488 4050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3488 4050 50  0001 C CNN
 F 3 "~" H 3450 4200 50  0001 C CNN
 	1    3450 4200
 	0    1    1    0   
@@ -1415,12 +1415,12 @@ F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R7
 U 1 1 5DB2F657
 P 5500 4050
-F 0 "R?" V 5500 4050 50  0000 C CNN
+F 0 "R7" V 5500 4050 50  0000 C CNN
 F 1 "499" V 5600 4050 50  0000 C CNN
-F 2 "" V 5430 4050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5430 4050 50  0001 C CNN
 F 3 "~" H 5500 4050 50  0001 C CNN
 	1    5500 4050
 	0    1    1    0   
@@ -1432,12 +1432,12 @@ Wire Wire Line
 Text Label 5700 4050 0    50   ~ 0
 TX
 $Comp
-L Device:C C?
+L Device:C C11
 U 1 1 5DB41C5E
 P 5600 3550
-F 0 "C?" V 5348 3550 50  0000 C CNN
+F 0 "C11" V 5348 3550 50  0000 C CNN
 F 1 "100nF" V 5439 3550 50  0000 C CNN
-F 2 "" H 5638 3400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5638 3400 50  0001 C CNN
 F 3 "~" H 5600 3550 50  0001 C CNN
 	1    5600 3550
 	0    1    1    0   
@@ -1456,4 +1456,85 @@ Wire Wire Line
 Connection ~ 5850 3950
 Wire Wire Line
 	5850 3950 5950 3950
+$Comp
+L Device:LED D5
+U 1 1 5DA3D956
+P 5500 5150
+F 0 "D5" H 5493 4895 50  0000 C CNN
+F 1 "LED" H 5493 4986 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5500 5150 50  0001 C CNN
+F 3 "~" H 5500 5150 50  0001 C CNN
+	1    5500 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5DA4F654
+P 5900 5150
+F 0 "R10" V 5800 5150 50  0000 C CNN
+F 1 "10k" V 5900 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5830 5150 50  0001 C CNN
+F 3 "~" H 5900 5150 50  0001 C CNN
+	1    5900 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5DA50594
+P 6200 5150
+F 0 "#PWR0112" H 6200 4900 50  0001 C CNN
+F 1 "GND" H 6205 4977 50  0000 C CNN
+F 2 "" H 6200 5150 50  0001 C CNN
+F 3 "" H 6200 5150 50  0001 C CNN
+	1    6200 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 5150 5350 5150
+Wire Wire Line
+	5650 5150 5750 5150
+Wire Wire Line
+	6050 5150 6200 5150
+$Comp
+L Device:LED D2
+U 1 1 5DA6B048
+P 7550 1650
+F 0 "D2" H 7543 1395 50  0000 C CNN
+F 1 "LED" H 7543 1486 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7550 1650 50  0001 C CNN
+F 3 "~" H 7550 1650 50  0001 C CNN
+	1    7550 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5DA6C56C
+P 7950 1650
+F 0 "R8" V 7850 1650 50  0000 C CNN
+F 1 "10k" V 7950 1650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7880 1650 50  0001 C CNN
+F 3 "~" H 7950 1650 50  0001 C CNN
+	1    7950 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5DA6DCAD
+P 8200 1650
+F 0 "#PWR0118" H 8200 1400 50  0001 C CNN
+F 1 "GND" H 8205 1477 50  0000 C CNN
+F 2 "" H 8200 1650 50  0001 C CNN
+F 3 "" H 8200 1650 50  0001 C CNN
+	1    8200 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 1650 8200 1650
+Wire Wire Line
+	7800 1650 7700 1650
+Wire Wire Line
+	7400 1650 7250 1650
+Connection ~ 7250 1650
+Text Label 5200 3950 0    50   ~ 0
+IO0
 $EndSCHEMATC

@@ -1,6 +1,6 @@
 (export (version D)
   (design
-    (source /home/lpatiny/git/test/esp/esp8266/mcp1703-33.sch)
+    (source /home/lpatiny/git/test/esp/esp32/mcp1703-33.sch)
     (date "Sat 12 Jan 2019 05:03:04 PM CET")
     (tool "Eeschema 5.0.2-1.fc29")
     (sheet (number 1) (name /) (tstamps /)

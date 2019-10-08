@@ -1,6 +1,6 @@
 (export (version D)
   (design
-    (source /home/lpatiny/git/test/esp/esp8266/esp8266.sch)
+    (source /home/lpatiny/git/test/esp/esp32/esp32.sch)
     (date "Sat 12 Jan 2019 04:53:55 PM CET")
     (tool "Eeschema 5.0.2-1.fc29")
     (sheet (number 1) (name /) (tstamps /)
@@ -9,7 +9,7 @@
         (company)
         (rev)
         (date)
-        (source esp8266.sch)
+        (source esp32.sch)
         (comment (number 1) (value ""))
         (comment (number 2) (value ""))
         (comment (number 3) (value ""))
@@ -38,10 +38,10 @@
         (comment (number 4) (value "")))))
   (components
     (comp (ref U1)
-      (value ESP8266EX)
+      (value esp32EX)
       (footprint Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm)
-      (datasheet http://espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf)
-      (libsource (lib MCU_Espressif) (part ESP8266EX) (description "Highly integrated Wi-Fi SoC, QFN-32"))
+      (datasheet http://espressif.com/sites/default/files/documentation/0a-esp32ex_datasheet_en.pdf)
+      (libsource (lib MCU_Espressif) (part esp32EX) (description "Highly integrated Wi-Fi SoC, QFN-32"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5C3A2024))
     (comp (ref U2)
@@ -227,14 +227,14 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
-    (libpart (lib MCU_Espressif) (part ESP8266EX)
+    (libpart (lib MCU_Espressif) (part esp32EX)
       (description "Highly integrated Wi-Fi SoC, QFN-32")
-      (docs http://espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf)
+      (docs http://espressif.com/sites/default/files/documentation/0a-esp32ex_datasheet_en.pdf)
       (footprints
         (fp QFN*1EP*5x5mm*P0.5mm*))
       (fields
         (field (name Reference) U)
-        (field (name Value) ESP8266EX)
+        (field (name Value) esp32EX)
         (field (name Footprint) Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm))
       (pins
         (pin (num 1) (name VDDA) (type power_in))

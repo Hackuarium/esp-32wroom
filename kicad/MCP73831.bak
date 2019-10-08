@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:esp8266-cache
+LIBS:esp32-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -312,7 +312,7 @@ $EndComp
 Wire Wire Line
 	7100 3000 7100 3150
 $Comp
-L esp8266-rescue:DMP1045U-DMP1045U D1
+L esp32-rescue:DMP1045U-DMP1045U D1
 U 1 1 5C39EFFF
 P 8050 2700
 F 0 "D1" V 8248 2700 50  0000 C CNN
