@@ -1,37 +1,56 @@
-# WARNING: The table below is for ESP-12E
-
-| GPIO  |            |           |         |                                           |            | Arduino |                  |
-| ----- | ---------- | --------- | ------- | ----------------------------------------- | ---------- | ------- | ---------------- |
-| 0     |            | SPI_CS2   |         | HIGH: normal, LOW: programming            | LOW / HIGH | D3      | button LOW / BLK |
-| 1     |            | SPI_CS1   | U0_TXD  |                                           | TX         | D10     | TX               |
-| 2     |            |           | U1_TXD  | on boot HIGH for programming              | HIGH       | D4      | One WIRE (HIGH)  |
-| 3     |            |           | U0_RXD  |                                           | RX         | D9      | RX               |
-| 4     |            |           |         |                                           | I2C        | D2/SDA  | SDA              |
-| 5     |            |           |         |                                           | I2C        | D1/SCL  | SCL              |
-| 6     | SDIO_CLK   | SPI_CLK   |         | used to connect flash 4MB                 | reserved   |
-| 7     | SDIO_DATA0 | SPI_MISO  |         | used to connect flash 4MB                 | reserved   |
-| 8     | SDIO_DATA1 | SPI_MOSI  | U1_RXD  | used to connect flash 4MB                 | reserved   |
-| 9     | SDIO_DATA2 | SPI_HD    | HSPI_HD | used to connect flash 4MB                 | reserved   |
-| 10    | SDIO_DATA3 | SPI_WP    | HSPI_WP | used to connect flash 4MB                 | reserved   |
-| 11    | SDIO_CMD   | SPI_CS0   |         | used to connect flash 4MB                 | reserved   |
-| 12    | MTDI       | HSPI_MISO |         |                                           | MISO       | D6      | PWM R            |
-| 13    | MTCK       | HSPI_MOSI | U0_CTS  |                                           | MOSI       | D7      | PWM G            |
-| 14    | MTMS       | HSPI_CLK  |         |                                           | CLK        | D5      | PWM B            |
-| 15    | MTDO       | HSPI_CS   | U0_RTS  | on boot LOW for programming               | LOW / CS   | D8      | PWM W (LOW)      |
-| 16    | XPD_DCDC   |           |         | sleep mode to EXT_RSTB (allow deep sleep) | RESET      | D0      | RST              |
-| 17    | ADC        |           |         | voltage 0—1.0V                            | Battery    | A0      |
-| RESET |            |           |         |                                           |            |         | Pull UP          |
-
+| #   | Name           | A   | SPI     | HS         | I2C | Touch |     |
+| --- | -------------- | --- | ------- | ---------- | --- | ----- | --- |
+| 1   | GND            |     |         |            |     |       |     |
+| 2   | 3V3            |     |         |            |     |       |     |
+| 3   | EN             |     |         |            |     |       |     |
+| 4   | SENSOR_VP/IO36 | A0  |         |            |     |       |     |
+| 5   | SENSOR_VN/IO39 | A3  |         |            |     |       |     |
+| 6   | IO34           | A6  |         |            |     |       |     |
+| 7   | IO35           | A7  |         |            |     |       |     |
+| 8   | IO32           | A4  |         |            |     | T9    |     |
+| 9   | IO33           | A5  |         |            |     | T8    |     |
+| 10  | IO25           | A18 |         |            |     |       |     |
+| 11  | IO26           | A19 |         |            |     |       |     |
+| 12  | IO27           | A17 |         |            |     | T7    |     |
+| 13  | IO14           | A16 | HSPICLK | HS2_CLK    |     | T6    |     |
+| 14  | IO12           | A15 | HSPIQ   | HS2_DATA2  |     | T5    |     |
+| 15  | GND            |     |         |            |     | T4    |     |
+| 16  | IO13           | A14 | HSPID   | HS2_DATA3  |     |       |     |
+| 17  | SHD/SD2        |     | SPIHD   | HS1        |     |       |     |
+| 18  | SWP/SD3        |     | SPIWP   |            |     |       |     |
+| 19  | SCS/CMD        |     | SPICS0  |            |     |       |     |
+| 20  | SCK/CLK        |     | SPICLK  |            |     |       |     |
+| 21  | SDO/SD0        |     | SPIQ    |            |     |       |     |
+| 22  | SDI/SD1        |     | SPID    |            |     |       |     |
+| 23  | IO15           | A13 | HSPICS0 |            |     | T3    |     |
+| 24  | IO2            | A12 | HSPIWP  |            |     | T2    |     |
+| 25  | IO0            | A11 |         |            |     | T1    |     |
+| 26  | IO4            | A10 | HSPIHD  | HS2_DATA1  |     | T0    |     |
+| 27  | IO16           |     |         | HS1_DATA4  |     |       |     |
+| 28  | IO17           |     |         | HS1_DATA5  |     |       |     |
+| 29  | IO5            |     | VSPICS0 | HS1_DATA6  |     |       |     |
+| 30  | IO18           |     | VSPICLK | HS1_DATA7  |     |       |     |
+| 31  | IO19           |     | VSPIQ   |            |     |       |     |
+| 32  | NC             |     |         |            |     |       |     |
+| 33  | IO21           |     | VSPIHD  |            | SDA |       |     |
+| 34  | RXD0           |     |         |            |     |       |     |
+| 35  | TXD0           |     |         |            |     |       |     |
+| 36  | IO22           |     | VSPIWP  |            | SCL |       |     |
+| 37  | IO23           |     | VSPID   | HS1_STROBE |     |       |     |
+| 38  | GND            |     |         |            |     |       |     |
 
 <img src="https://ht-deko.com/arduino/pic/esp-wroom-32_pinout_01.png">
 
 ## ESP32-Wroom32 datasheet
+
 https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
 
 ## Official Espressif hardware design guidelines
+
 https://www.espressif.com/sites/default/files/documentation/esp32_hardware_design_guidelines_en.pdf
 
 ## Really DIY ESP32 board
+
 https://www.instructables.com/id/DIY-ESP32-Development-Board-ESPer/
 
 ## Programming an ESP32 from Arduino IDE
@@ -42,7 +61,6 @@ https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-window
 
 Getting started with ESP32 (including blink example)
 https://randomnerdtutorials.com/getting-started-with-esp32/
-
 
 ## Flashing board ?
 
@@ -62,7 +80,6 @@ https://randomnerdtutorials.com/projects-esp32/
 
 ## FreeRTOS
 
-
 ## Functions
 
 - RGBW
@@ -72,4 +89,3 @@ https://randomnerdtutorials.com/projects-esp32/
 - Pressure: MS5637
 - Humidity / Temperature: ChipCAP2 or Si7021
 - Power monitoring
-
