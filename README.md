@@ -1,3 +1,5 @@
+# WARNING: The table below is for ESP-12E
+
 | GPIO  |            |           |         |                                           |            | Arduino |                  |
 | ----- | ---------- | --------- | ------- | ----------------------------------------- | ---------- | ------- | ---------------- |
 | 0     |            | SPI_CS2   |         | HIGH: normal, LOW: programming            | LOW / HIGH | D3      | button LOW / BLK |
@@ -20,7 +22,6 @@
 | 17    | ADC        |           |         | voltage 0—1.0V                            | Battery    | A0      |
 | RESET |            |           |         |                                           |            |         | Pull UP          |
 
-15: WS2812, adressable led
 
 <img src="https://ht-deko.com/arduino/pic/esp-wroom-32_pinout_01.png">
 
@@ -32,7 +33,6 @@ https://www.espressif.com/sites/default/files/documentation/esp32_hardware_desig
 
 ## Really DIY ESP32 board
 https://www.instructables.com/id/DIY-ESP32-Development-Board-ESPer/
-
 
 
 ## Flashing board ?
@@ -55,6 +55,4 @@ You need to maintain `SW2` while pressing `SW1` (reset) in order to set the ESP-
 - Pressure: MS5637
 - Humidity / Temperature: ChipCAP2 or Si7021
 - Power monitoring
-
-## Other resources
 
