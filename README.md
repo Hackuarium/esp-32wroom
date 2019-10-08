@@ -47,7 +47,8 @@ https://randomnerdtutorials.com/getting-started-with-esp32/
 
 ## Flashing board ?
 
-May vary depending on development board models:
+May vary depending on development board models.
+
 One option:
 Hold down the "BOOT" button
 After uploading code and seeing the "Connecting..." message in Arduino IDE, release your finger from the "BOOT" button.
