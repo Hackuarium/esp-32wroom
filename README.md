@@ -42,6 +42,13 @@ You need to maintain `SW2` while pressing `SW1` (reset) in order to set the ESP-
 
 ## Programming an ESP32 from Arduino IDE
 
+Start by installing the ESP32 board in Arduino IDE
+https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-mac-and-linux-instructions/ (Mac/Linux)
+https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/ (Windows)
+
+Getting started with ESP32 (including blink example)
+https://randomnerdtutorials.com/getting-started-with-esp32/
+
 
 ## FreeRTOS
 
