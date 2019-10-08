@@ -44,7 +44,6 @@ Getting started with ESP32 (including blink example)
 https://randomnerdtutorials.com/getting-started-with-esp32/
 
 
-
 ## Flashing board ?
 
 May vary depending on development board models.
@@ -52,10 +51,14 @@ May vary depending on development board models.
 One option:
 Hold down the "BOOT" button
 After uploading code and seeing the "Connecting..." message in Arduino IDE, release your finger from the "BOOT" button.
+
 To avoid worrying about pressing the button, connect 10 uF electrolytic capacitor between the EN pin and GND
 (https://randomnerdtutorials.com/solved-failed-to-connect-to-esp32-timed-out-waiting-for-packet-header/)
 
+## Resources
 
+Many ESP32 tutorials/projects are available at Random Nerd Tutorials (web-based, sensor-based, data logging...):
+https://randomnerdtutorials.com/projects-esp32/
 
 ## FreeRTOS
 
