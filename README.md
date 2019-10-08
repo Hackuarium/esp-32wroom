@@ -70,7 +70,7 @@ One option:
 Hold down the "BOOT" button
 After uploading code and seeing the "Connecting..." message in Arduino IDE, release your finger from the "BOOT" button.
 
-To avoid worrying about pressing the button, connect 10 uF electrolytic capacitor between the EN pin and GND
+To avoid worrying about pressing the button, connect 10 uF electrolytic capacitor between the EN pin and GND (may work or not depending on boards...)
 (https://randomnerdtutorials.com/solved-failed-to-connect-to-esp32-timed-out-waiting-for-packet-header/)
 
 ## Resources
