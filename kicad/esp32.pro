@@ -1,4 +1,4 @@
-update=2019 October 08, Tuesday 20:52:31
+update=2019 October 22, Tuesday 19:21:11
 version=1
 last_client=kicad
 [general]
@@ -15,7 +15,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=esp8266.net
+LastNetListRead=esp32.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
