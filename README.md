@@ -81,6 +81,8 @@ To avoid worrying about pressing the button, connect 10 uF electrolytic capacito
 Many ESP32 tutorials/projects are available at Random Nerd Tutorials (web-based, sensor-based, data logging, deep sleep...):
 https://randomnerdtutorials.com/projects-esp32/
 
+Schema for a dev kit: https://dl.espressif.com/dl/schematics/esp32_devkitc_v4-sch.pdf
+
 ## FreeRTOS
 
 ## Functions
