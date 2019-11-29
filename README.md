@@ -39,7 +39,7 @@
 | 37 | IO23           |     | VSPID   | HS1_STROBE |     |       |             |            |
 | 38 | GND            |     |         |            |     |       |             |            |
 
-<img src="https://ht-deko.com/arduino/pic/esp-wroom-32_pinout_01.png">
+<img src="docs/esp-wroom-32_pinout_01.png">
 
 ## ESP32-Wroom32 datasheet
 
