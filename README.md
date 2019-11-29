@@ -14,8 +14,8 @@
 | 12 | IO27           | A17 |         |            |     | T7    | ADC battery | RTC_GPIO17 |
 | 13 | IO14           | A16 | HSPICLK | HS2_CLK    |     | T6    | Blue        | RTC_GPIO16 |
 | 14 | IO12           | A15 | HSPIQ   | HS2_DATA2  |     | T5    | Red         | RTC_GPIO15 |
-| 15 | GND            |     |         |            |     | T4    |             |            |
-| 16 | IO13           | A14 | HSPID   | HS2_DATA3  |     |       | Green       | RTC_GPIO14 |
+| 15 | GND            |     |         |            |     |       |             |            |
+| 16 | IO13           | A14 | HSPID   | HS2_DATA3  |     | T4    | Green       | RTC_GPIO14 |
 | 17 | SHD/SD2        |     | SPIHD   | HS1        |     |       |             |            |
 | 18 | SWP/SD3        |     | SPIWP   |            |     |       |             |            |
 | 19 | SCS/CMD        |     | SPICS0  |            |     |       |             |            |
