@@ -18,7 +18,7 @@ $Sheet
 S 3300 1550 1400 900 
 U 5C3A17E5
 F0 "MCP73831" 50
-F1 "schemas/MCP73831.sch" 50
+F1 "hacki/sheets/MCP73831.sch" 50
 F2 "VIN" I L 3300 1950 50 
 F3 "VOUT" O R 4700 1650 50 
 F4 "V_STATUS" O R 4700 2050 50 
@@ -29,7 +29,7 @@ $Sheet
 S 5850 1400 950  550 
 U 5C3A2732
 F0 "MCP1703-33" 50
-F1 "schemas/MCP1703-33.sch" 50
+F1 "hacki/sheets/MCP1703-33.sch" 50
 F2 "VDD" I L 5850 1650 50 
 F3 "3.3V" O R 6800 1650 50 
 $EndSheet
@@ -51,7 +51,6 @@ P 7500 4000
 F 0 "Q1" H 7706 4046 50  0000 L CNN
 F 1 "BSP75" H 7706 3955 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-223" H 7700 3925 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-BSP129-DS-v01_42-en.pdf?fileId=db3a30433c1a8752013c1fc296d2395f" H 7700 4075 50  0001 L CNN
 	1    7500 4000
 	1    0    0    -1  
 $EndComp
@@ -62,7 +61,6 @@ P 10150 5600
 F 0 "U3" H 10591 5646 50  0000 L CNN
 F 1 "Si7020-A20" H 10591 5555 50  0000 L CNN
 F 2 "Package_DFN_QFN:DFN-6-1EP_3x3mm_P1mm_EP1.5x2.4mm" H 10150 5200 50  0001 C CNN
-F 3 "https://www.silabs.com/documents/public/data-sheets/Si7020-A20.pdf" H 9950 5900 50  0001 C CNN
 	1    10150 5600
 	1    0    0    -1  
 $EndComp
@@ -84,7 +82,6 @@ P 8500 4000
 F 0 "Q2" H 8706 4046 50  0000 L CNN
 F 1 "BSP75" H 8706 3955 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-223" H 8700 3925 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-BSP129-DS-v01_42-en.pdf?fileId=db3a30433c1a8752013c1fc296d2395f" H 8700 4075 50  0001 L CNN
 	1    8500 4000
 	1    0    0    -1  
 $EndComp
@@ -95,7 +92,6 @@ P 9600 4000
 F 0 "Q3" H 9806 4046 50  0000 L CNN
 F 1 "BSP75" H 9806 3955 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-223" H 9800 3925 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-BSP129-DS-v01_42-en.pdf?fileId=db3a30433c1a8752013c1fc296d2395f" H 9800 4075 50  0001 L CNN
 	1    9600 4000
 	1    0    0    -1  
 $EndComp
@@ -106,7 +102,6 @@ P 10600 4000
 F 0 "Q4" H 10806 4046 50  0000 L CNN
 F 1 "BSP75" H 10806 3955 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-223" H 10800 3925 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-BSP129-DS-v01_42-en.pdf?fileId=db3a30433c1a8752013c1fc296d2395f" H 10800 4075 50  0001 L CNN
 	1    10600 4000
 	1    0    0    -1  
 $EndComp
@@ -352,7 +347,7 @@ $Sheet
 S 850  1400 950  550 
 U 5C3D1997
 F0 "MCP1703-50" 50
-F1 "schemas/MCP1703-50.sch" 50
+F1 "hacki/sheets/MCP1703-50.sch" 50
 F2 "VDD" I L 850 1650 50 
 F3 "5.0V" O R 1800 1650 50 
 $EndSheet
