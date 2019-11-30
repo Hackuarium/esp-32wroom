@@ -6,4 +6,6 @@
   (lib (name rj12)(type Legacy)(uri ${KIPRJMOD}/hacki/symbols/rj12.lib)(options "")(descr ""))
   (lib (name Si7021-A20)(type Legacy)(uri ${KIPRJMOD}/hacki/symbols/Si7021-A20.lib)(options "")(descr ""))
   (lib (name Test_points)(type Legacy)(uri ${KIPRJMOD}/hacki/symbols/Test_points.lib)(options "")(descr ""))
+  (lib (name ACT4088)(type Legacy)(uri ${KIPRJMOD}/hacki/symbols/ACT4088.lib)(options "")(descr ""))
+  (lib (name DMP1045U)(type Legacy)(uri ${KIPRJMOD}/hacki/symbols/dmp1045u.lib)(options "")(descr ""))
 )
