@@ -216,4 +216,7 @@ Wire Wire Line
 	6250 4100 6200 4100
 Wire Wire Line
 	6250 4050 6350 4050
+NoConn ~ 5450 4000
+Text Label 7000 4250 0    50   ~ 0
+GND
 $EndSCHEMATC
