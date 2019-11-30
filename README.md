@@ -25,7 +25,7 @@
 | 23 | IO15           | A13 | HSPICS0 |            |     | T3    | White       | RTC_GPIO13 |
 | 24 | IO2            | A12 | HSPIWP  |            |     | T2    | RESERVED    | RTC_GPIO12 |
 | 25 | IO0            | A11 |         |            |     | T1    | Prog        | RTC_GPIO11 |
-| 26 | IO4            | A10 | HSPIHD  | HS2_DATA1  |     | T0    |             | RTC_GPIO10 |
+| 26 | IO4            | A10 | HSPIHD  | HS2_DATA1  |     | T0    | OneWire1    | RTC_GPIO10 |
 | 27 | IO16           |     |         | HS1_DATA4  |     |       |             |            |
 | 28 | IO17           |     |         | HS1_DATA5  |     |       |             |            |
 | 29 | IO5            |     | VSPICS0 | HS1_DATA6  |     |       |             |            |

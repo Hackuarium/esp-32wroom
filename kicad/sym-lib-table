@@ -8,4 +8,5 @@
   (lib (name Test_points)(type Legacy)(uri ${KIPRJMOD}/hacki/symbols/Test_points.lib)(options "")(descr ""))
   (lib (name ACT4088)(type Legacy)(uri ${KIPRJMOD}/hacki/symbols/ACT4088.lib)(options "")(descr ""))
   (lib (name DMP1045U)(type Legacy)(uri ${KIPRJMOD}/hacki/symbols/dmp1045u.lib)(options "")(descr ""))
+  (lib (name TCS3400)(type Legacy)(uri ${KIPRJMOD}/hacki/symbols/TCS3400.lib)(options "")(descr ""))
 )
