@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BSP75
+D 0.35A Id, 240V Vds, N-Channel MOSFET, SOT-223
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/Infineon-BSP75N-DS-v01_04-en.pdf?fileId=db3a30431ed1d7b2011f471f5a0256d1
+$ENDCMP
+#
+#End Doc Library

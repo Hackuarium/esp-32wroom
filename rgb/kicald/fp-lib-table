@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name libs)(type KiCad)(uri ${KIPRJMOD}/hacki/symbols)(options "")(descr ""))
+  (lib (name PAD)(type KiCad)(uri /Users/lpatiny/git/hackuarium/esp-32wroom/rgb/kicald/hacki/footprints/PAD.pretty)(options "")(descr ""))
+)
