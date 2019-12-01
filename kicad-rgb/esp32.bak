@@ -207,8 +207,6 @@ F 3 "" H 4200 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 2450 4350 2450
-Wire Wire Line
 	4200 2000 4200 2150
 Wire Wire Line
 	1750 3000 2050 3000
@@ -407,20 +405,6 @@ F 3 "~" H 7850 1300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 7650 1300
-$Comp
-L Connector:TestPoint_2Pole TP1
-U 1 1 5C4381A5
-P 4350 2650
-F 0 "TP1" V 4304 2708 50  0000 L CNN
-F 1 "OneWire" V 4395 2708 50  0000 L CNN
-F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 4350 2650 50  0001 C CNN
-F 3 "~" H 4350 2650 50  0001 C CNN
-	1    4350 2650
-	0    1    1    0   
-$EndComp
-Connection ~ 4350 2450
-Wire Wire Line
-	4350 2450 4500 2450
 $Comp
 L Connector:TestPoint_2Pole TP4
 U 1 1 5C44FB6E
@@ -787,19 +771,6 @@ Text Label 3500 4700 0    50   ~ 0
 IO0
 Wire Wire Line
 	1750 4700 2300 4700
-Wire Wire Line
-	4350 2950 4350 2850
-$Comp
-L power:GND #PWR012
-U 1 1 5C438384
-P 4350 2950
-F 0 "#PWR012" H 4350 2700 50  0001 C CNN
-F 1 "GND" H 4355 2777 50  0000 C CNN
-F 2 "" H 4350 2950 50  0001 C CNN
-F 3 "" H 4350 2950 50  0001 C CNN
-	1    4350 2950
-	1    0    0    -1  
-$EndComp
 Text GLabel 2250 4900 0    50   Input ~ 0
 CHARGING
 Wire Wire Line
@@ -1533,4 +1504,6 @@ F 3 "" H 5500 4050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5500 4050 5500 4150
+Wire Wire Line
+	4200 2450 4500 2450
 $EndSCHEMATC

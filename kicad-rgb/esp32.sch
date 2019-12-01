@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -14,14 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 800  2750 950  550 
-U 5C3A2732
-F0 "MCP1703-33" 50
-F1 "schemas/MCP1703-33.sch" 50
-F2 "VDD" I L 800 3000 50 
-F3 "3.3V" O R 1750 3000 50 
-$EndSheet
 $Comp
 L BSP75:BSP75 Q1
 U 1 1 5C3A4B25
@@ -208,8 +200,6 @@ F 3 "" H 4200 2000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4200 2000 4200 2150
-Wire Wire Line
-	1750 3000 2050 3000
 $Comp
 L power:+3.3V #PWR010
 U 1 1 5C3C20CE
@@ -281,14 +271,6 @@ Text Label 2250 1950 0    50   ~ 0
 VCC_FTDI
 Text Label 1600 4700 0    50   ~ 0
 RST
-$Sheet
-S 850  1400 950  550 
-U 5C3D1997
-F0 "MCP1703-50" 50
-F1 "schemas/MCP1703-50.sch" 50
-F2 "VDD" I L 850 1650 50 
-F3 "5.0V" O R 1800 1650 50 
-$EndSheet
 $Comp
 L power:GND #PWR027
 U 1 1 5C3FE6C9
@@ -416,18 +398,6 @@ F 3 "~" H 2050 3200 50  0001 C CNN
 	1    2050 3200
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector:TestPoint_2Pole TP2
-U 1 1 5C44FC41
-P 1950 1850
-F 0 "TP2" V 1904 1908 50  0000 L CNN
-F 1 "5V" V 1995 1908 50  0000 L CNN
-F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 1950 1850 50  0001 C CNN
-F 3 "~" H 1950 1850 50  0001 C CNN
-	1    1950 1850
-	0    1    1    0   
-$EndComp
-Connection ~ 2050 3000
 Wire Wire Line
 	2050 3000 2200 3000
 $Comp
@@ -441,35 +411,17 @@ F 3 "" H 2050 3400 50  0001 C CNN
 	1    2050 3400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1800 1650 1950 1650
-Connection ~ 1950 1650
 $Comp
 L power:+12V #PWR09
 U 1 1 5C46936E
-P 700 1650
-F 0 "#PWR09" H 700 1500 50  0001 C CNN
-F 1 "+12V" H 715 1823 50  0000 C CNN
-F 2 "" H 700 1650 50  0001 C CNN
-F 3 "" H 700 1650 50  0001 C CNN
-	1    700  1650
+P 2400 1650
+F 0 "#PWR09" H 2400 1500 50  0001 C CNN
+F 1 "+12V" H 2415 1823 50  0000 C CNN
+F 2 "" H 2400 1650 50  0001 C CNN
+F 3 "" H 2400 1650 50  0001 C CNN
+	1    2400 1650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	850  1650 700  1650
-$Comp
-L power:GND #PWR016
-U 1 1 5C47577B
-P 1950 2150
-F 0 "#PWR016" H 1950 1900 50  0001 C CNN
-F 1 "GND" H 1955 1977 50  0000 C CNN
-F 2 "" H 1950 2150 50  0001 C CNN
-F 3 "" H 1950 2150 50  0001 C CNN
-	1    1950 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1950 2150 1950 2050
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 5C4E4727
@@ -525,8 +477,6 @@ F 3 "~" H 3150 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 3150 1650
-Wire Wire Line
-	1950 1650 2700 1650
 $Comp
 L hackuarium:LOGO #G1
 U 1 1 5C44EF02
@@ -1506,4 +1456,6 @@ Wire Wire Line
 	5500 4050 5500 4150
 Wire Wire Line
 	4200 2450 4500 2450
+Wire Wire Line
+	2700 1650 2400 1650
 $EndSCHEMATC
