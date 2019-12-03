@@ -1,7 +1,5 @@
-/*********
- * 
-  Rui Santos
-  Complete project details at https://randomnerdtutorials.com  
+/********* 
+Adapted from https://randomnerdtutorials.com  
 *********/
 
 TaskHandle_t Task1;
