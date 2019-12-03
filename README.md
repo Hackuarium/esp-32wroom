@@ -65,13 +65,9 @@ https://randomnerdtutorials.com/getting-started-with-esp32/
 Some debug information
 https://github.com/espressif/esptool/wiki/ESP32-Boot-Mode-Selection
 
-## Flashing board ?
+## Flashing board
 
-May vary depending on development board models.
-
-One option:
-Hold down the "BOOT" button
-After uploading code and seeing the "Connecting..." message in Arduino IDE, release your finger from the "BOOT" button.
+In Arduino IDE, select "ESP32 Wrover module" (>tools>boards), connect the UART programmer to the board (make sure it is in the right orientation), select the corresponding port (>tools>port). Write a simple sketch (for example blink using pin18 for the red light), and upload it to the board, after seeing the "Connecting..." message in the lower windows of Arduino IDE, press both buttons (PROG and RESET), release the "RESET" button first and then release the "BOOT" button, the upload should start. After this, press reset so that the latest code runs on the board (you should see the red light blinking).
 
 To avoid worrying about pressing the button, connect 10 uF electrolytic capacitor between the EN pin and GND (may work or not depending on boards...)
 (https://randomnerdtutorials.com/solved-failed-to-connect-to-esp32-timed-out-waiting-for-packet-header/)
