@@ -42,7 +42,7 @@ void Task1code( void * pvParameters ){
   Serial.print("Task1 running on core ");
   Serial.println(xPortGetCoreID());
 
-  for(;;){
+  while(1){
     Serial.print("Task1 running on core ");
     Serial.println(xPortGetCoreID());
     digitalWrite(led1, HIGH);
