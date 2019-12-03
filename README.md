@@ -80,6 +80,7 @@ Many ESP32 tutorials/projects are available at Random Nerd Tutorials (web-based,
 https://randomnerdtutorials.com/projects-esp32/
 
 Schema for a dev kit: https://dl.espressif.com/dl/schematics/esp32_devkitc_v4-sch.pdf
+Ultra low power tips for ESP32: http://iot-bits.com/ultra-low-power-design-esp32-10-tips/
 
 ## FreeRTOS
 
