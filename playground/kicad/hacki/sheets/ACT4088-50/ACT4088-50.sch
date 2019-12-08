@@ -206,8 +206,8 @@ F 3 "" H 6200 4700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6200 4600 6200 4700
-Text Notes 6350 4750 0    50   ~ 0
-3.3v: 16.23k\n5v: 9.64k
+Text Notes 6400 4850 0    50   ~ 0
+3.3v: 16.23k\n5v: 9.64k\n6V: 7.78k\n7V: 6.53k
 Wire Wire Line
 	7000 3800 7600 3800
 $Comp
