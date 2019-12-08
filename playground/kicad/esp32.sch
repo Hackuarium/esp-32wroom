@@ -1468,10 +1468,8 @@ Wire Wire Line
 	4700 2050 4800 2050
 Wire Wire Line
 	4700 1850 5200 1850
-Text GLabel 3950 4150 0    50   Input ~ 0
+Text GLabel 3950 4250 0    50   Input ~ 0
 CHARGING
-Wire Wire Line
-	4000 4150 3950 4150
 $Comp
 L RF_Module:ESP32-WROOM-32U U1
 U 1 1 5D9EF6D7
@@ -1659,7 +1657,6 @@ NoConn ~ 4000 5350
 NoConn ~ 4000 5450
 NoConn ~ 4000 5550
 NoConn ~ 4000 5650
-NoConn ~ 4000 4250
 NoConn ~ 5200 4450
 NoConn ~ 5200 4950
 NoConn ~ 5200 5050
@@ -1732,4 +1729,7 @@ F1 "hacki/sheets/AP7365-33Y/AP7365-33Y.sch" 50
 F2 "VIN" I L 5950 1650 50 
 F3 "VOUT" I R 6750 1650 50 
 $EndSheet
+Wire Wire Line
+	3950 4250 4000 4250
+NoConn ~ 4000 4150
 $EndSCHEMATC

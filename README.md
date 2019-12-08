@@ -3,8 +3,8 @@
 | 1  | GND            |       |         |            |     |       |             |            |
 | 2  | 3V3            |       |         |            |     |       |             |            |
 | 3  | EN             |       |         |            |     |       |             |            |
-| 4  | SENSOR_VP/IO36 | A0    |         |            |     |       | Charging    | RTC_GPIO0  |
-| 5  | SENSOR_VN/IO39 | A3    |         |            |     |       |             | RTC_GPIO3  |
+| 4  | SENSOR_VP/IO36 | A0    |         |            |     |       |             | RTC_GPIO0  |
+| 5  | SENSOR_VN/IO39 | A3    |         |            |     |       | Charging    | RTC_GPIO3  |
 | 6  | IO34           | A6    |         |            |     |       | OneWire1    | RTC_GPIO4  |
 | 7  | IO35           | A7    |         |            |     |       | OneWire2    | RTC_GPIO5  |
 | 8  | IO32           | A4    |         |            |     | T9    | Ext3        | RTC_GPIO9  |
