@@ -1665,7 +1665,7 @@ ONE1
 Text GLabel 5500 6250 2    50   Input ~ 0
 ONE2
 Text Label 5300 4350 0    50   ~ 0
-ONE1
+ONE3
 Text GLabel 5550 5350 2    50   Input ~ 0
 SDA
 Text GLabel 5550 5450 2    50   Input ~ 0
