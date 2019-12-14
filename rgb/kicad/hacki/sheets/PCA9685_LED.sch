@@ -818,4 +818,6 @@ Text HLabel 2150 2550 0    50   Input ~ 0
 SCL
 Text HLabel 2150 2650 0    50   Input ~ 0
 SDA
+NoConn ~ 2200 2750
+NoConn ~ 2200 2850
 $EndSCHEMATC
