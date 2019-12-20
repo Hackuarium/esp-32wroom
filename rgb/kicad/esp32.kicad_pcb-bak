@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 52)
+    (drawings 53)
     (tracks 513)
     (zones 0)
     (modules 72)
@@ -2763,6 +2763,9 @@
       (net 2 +3V3))
   )
 
+  (gr_text GND (at 167.662 79.596) (layer F.SilkS) (tstamp 5DF4DFCD)
+    (effects (font (size 1.27 1.27) (thickness 0.3)))
+  )
   (gr_text meteo (at 101.622 78.072 90) (layer F.SilkS) (tstamp 5DF3C37F)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
